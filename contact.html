@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Programări | Muzeul Virtual</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-landmark me-2 text-warning"></i>Patrimoniu Cultural</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link" href="exhibitions.html">Expoziții</a></li>
+                    <li class="nav-item"><a class="nav-link" href="collections.html">Colecții</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Istorie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="virtual-tour.html">Tur Virtual</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main style="margin-top: 110px;">
+        <div class="container py-4">
+            <h1 class="text-center mb-5 text-uppercase" style="color: var(--bordo);">Contact și Programări</h1>
+            
+            <div class="row g-5">
+                <div class="col-md-5">
+                    <div class="bg-light p-4 rounded shadow-sm h-100">
+                        <h4 class="fw-bold mb-4" style="color: var(--bordo);">Sediul Central Fictiv</h4>
+                        <p><i class="fa-solid fa-map-marker-alt text-danger me-2"></i> Calea Victoriei, Nr. 100, București</p>
+                        <p><i class="fa-solid fa-phone text-success me-2"></i> +40 21 000 0000</p>
+                        <p><i class="fa-solid fa-envelope text-primary me-2"></i> contact@patrimoniucultural.ro</p>
+                        <hr>
+                        <h5 class="fw-bold mt-3">Program vizite fizice:</h5>
+                        <p class="small text-muted mb-0">Marți - Duminică: 10:00 - 18:00<br>Luni: Închis</p>
+                    </div>
+                </div>
+
+                <div class="col-md-7">
+                    <form id="bookingForm" class="p-4 bg-white shadow-sm rounded border" novalidate>
+                        <h4 class="mb-4">Planifică o Vizită Ghidată</h4>
+                        
+                        <div class="mb-3">
+                            <label for="formName" class="form-label">Nume Complet</label>
+                            <input type="text" class="form-control" id="formName" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="formEmail" class="form-label">Adresă Email</label>
+                                <input type="email" class="form-control" id="formEmail" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="formPhone" class="form-label">Telefon Mobil</label>
+                                <input type="tel" class="form-control" id="formPhone" placeholder="07xxxxxxxx" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="formGuests" class="form-label">Număr Persoane</label>
+                                <input type="number" class="form-control" id="formGuests" min="1" max="50" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="formDate" class="form-label">Data Vizitei</label>
+                                <input type="date" class="form-control" id="formDate" required>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold w-100 py-2 text-uppercase fw-bold mt-2">Trimite Solicitarea</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p class="mb-0 small">&copy; 2026 Muzeul Virtual Patrimoniu Cultural.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validation.js"></script>
+</body>
+</html>
